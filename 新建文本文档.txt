@@ -1,0 +1,14 @@
+#include <iostream>
+#include <string>
+#include <opencv2\opencv.hpp>  
+using namespace std;
+using namespace cv;
+
+int main()
+{
+    string imgPath = "C:\\Users\\admin\\Desktop\\timg.jpg";
+    Mat img = imread(imgPath);
+    imshow("flower",img);
+    waitKey(0);
+    return 0;
+}
